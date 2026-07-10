@@ -1,0 +1,23 @@
+<html>
+    <script>
+        var birth = "20000922"; // 문자열 자체가 string이라는 객체다.
+
+        // 2000년 09월 22일
+        var y = birth.substring(0,4)
+        var m = birth.substring(4,6)
+        var d = birth.substring(6,8)
+
+
+        document.write(y + "년 " + m + "월 " + d + "일" +"<br>");
+
+        var ymd = "2000-02-22"; //입력
+        // 20000922 // 출력
+
+        var str="Korea";
+        var a1 = str.toLowerCase(); // 모두 소문자로
+        var a2 = str.toUpperCase(); // 모두 대문자로
+        document.write("소문자로 : " +a1 + "<br>");
+        document.write("대문자로 : " +a2 + "<br>");
+
+    </script>
+</html>
