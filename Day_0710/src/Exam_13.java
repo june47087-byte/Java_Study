@@ -33,17 +33,20 @@ public class Exam_13 {
 			max = eng;
 		}else if(min > eng) { // 최소
 			min = eng;
-		}else if(max > mat) { // 최대 
+		}
+		if(max < mat) { // 최대 
 			max = mat;
 		}else if(min > mat) { // 최소
 			min = mat;
-		}else if(max > sci) { // 최대 
+		}
+		if(max < sci) { // 최대 
 			max = sci;
 		}else if(min > sci) { // 최소
 			min = sci;
 		}
 	
 	
+		
 		System.out.print("이름 : " + nam + "\n" +
 						 "총점 : " + sum + "\n" + 
 						 "평균 : " + ave + "\n" +
