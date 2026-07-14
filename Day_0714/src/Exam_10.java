@@ -34,6 +34,7 @@ public class Exam_10 {
 		int sum2= 0;
 		for(int a : score) {
 			System.out.print(a  + "  ");
+			sum2 += score[a];
 		}
 		System.out.print("\n");
 

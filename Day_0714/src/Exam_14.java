@@ -1,0 +1,55 @@
+
+//Data : 90, 75, 80, 77, 85, 79, 95, 70, 85, 90, 77
+//평균 : 83.0
+//평균에 가장 가까운 값 : 85	
+
+public class Exam_14 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int score[] = {90, 75, 80, 77, 85, 79, 95, 70, 85, 90, 77};
+		
+		
+		System.out.print("Data : ");
+		int sum = 0;
+		for(int a : score) {
+			System.out.print(a + " ");
+			sum += a;
+		}
+		double ave = (double)sum / score.length;
+		System.out.print("\n");
+		System.out.printf("평균 : " + ave);
+		System.out.print("\n");
+		// 평균에 가장 가까운 값
+		
+//		int min = score[0] - ave; // 간격의 최소 
+//		int minValue; // 실제 값
+//		실제로는 이렇게 해야할것이다.
+//		int min;
+//		int minValue = score[0];
+//		if(score[0] > ave) {
+//			min = score[0] - (int)ave;
+//		}else {
+//			min = (int)ave - score[0];
+//		}
+//		
+//		min = (score[0] > ave) ? score[0] - (int)ave : (int)ave - score[0];
+
+		int min = score[0];
+		int minValue = score[0];
+		for(int i = 1; i < score.length; i++) {
+			int imsi = (score[i] > ave) ? score[i] - (int)ave : (int)ave - score[i];
+			
+			if(min > imsi) {
+				min = imsi;
+				minValue = score[i];
+			}
+		}
+		System.out.print("평균에 가장 가까운 값 : " + minValue);
+		
+		
+		
+
+	}
+
+}
