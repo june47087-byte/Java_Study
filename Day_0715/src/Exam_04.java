@@ -48,7 +48,7 @@ public class Exam_04 {
 		int scoreCp[] = score.clone();
 		for(int i = 0; i < scoreCp.length - 1; i++) {
 			for(int j = i + 1; j < scoreCp.length; j++) {
-				if(scoreCp[i] > scoreCp[i]) {
+				if(scoreCp[i] > scoreCp[j]) {
 					int imsi = scoreCp[i];
 					scoreCp[i]= scoreCp[j];
 					scoreCp[j]= imsi;
