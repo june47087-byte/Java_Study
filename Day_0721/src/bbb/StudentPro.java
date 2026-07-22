@@ -30,14 +30,10 @@ public class StudentPro {
 		
 		int tot = stu1.getKor() + stu1.getEng() + stu1.getMat();
 		double ave = (double)tot / 3.0; 
-		
-		// 💡 수정 포인트 4: 비어있던 () 안에 stu1.getHak()을 넣어 학번을 가져옵니다!
 		System.out.print(stu1.getHak() + "\t" + stu1.getName() + "\t");
 		System.out.print(stu1.getAge() + "\t" + str + "\t");
 		System.out.print(stu1.getKor() + "\t" + stu1.getEng() + "\t");
 		System.out.print(stu1.getMat() + "\t" + tot + "\t");
-		
-		// 💡 보너스: 평균은 소수점이 끝없이 나올 수 있으니 printf로 깔끔하게 잘라줍니다.
 		System.out.printf("%.2f\n", ave);
 	}
 }
